@@ -2,8 +2,8 @@
 
 ## users テーブル
 
- column              | Type   | Options                   |
-| ---------- --------| -------| --------------------------|
+| column             | Type   | Options                   |
+| -------------------| -------| --------------------------|
 | nickname           | string | null: false               |
 | email              | string | null: false, unique: true |
 | encrypted_password | string | null: false               |
@@ -22,3 +22,6 @@
 | bed_type           | text       | null: false                    |
 | facility           | text       | null: false                    |
 | user               | references | null: false, foreign_key: true |
+
+### Association
+- belongs_to :user
