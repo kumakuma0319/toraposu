@@ -1,7 +1,7 @@
 class HotelsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
-  before_action :hotel_for_params, only: [:show, :edit, :update]
-  before_action :move_to_index, only: [:edit, :update]
+  before_action :hotel_for_params, only: [:show, :edit, :update, :destroy]
+  before_action :move_to_index, only: [:edit, :update, :destroy]
 
   def index
     @hotels = Hotel.all
@@ -24,6 +24,11 @@ class HotelsController < ApplicationController
   end
 
   def edit
+  end
+
+  def destroy
+    @hotel.destroy
+    redirect_to root_path
   end
 
   def update

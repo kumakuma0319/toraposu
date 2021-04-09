@@ -19,7 +19,7 @@
     <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
 
     <%= link_to "編集", edit_hotel_path(@hotel.id), method: :get, class: "item-red-btn" %>
-    <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
+     <%= link_to "削除", hotel_path(@hotel.id), method: :delete, class:"item-destroy" %>
 
 
 
