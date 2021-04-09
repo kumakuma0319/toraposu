@@ -28,7 +28,7 @@
     <ul class='item-lists'>
      <% @hotels.each do |hotel| %>
       <li class='list'>
-        <%= link_to hotels_path(hotel.id) do %>
+        <%= link_to hotel_path(hotel.id) do %>
         <div class='item-img-content'>
           <%= image_tag hotel.image, class: "item-img" %>
         </div>
