@@ -1,6 +1,7 @@
 class HotelsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
-  before_action :hotel_for_params, only: [:show]
+  before_action :hotel_for_params, only: [:show, :edit, :update]
+  before_action :move_to_index, only: [:edit, :update]
 
   def index
     @hotels = Hotel.all
@@ -21,6 +22,10 @@ class HotelsController < ApplicationController
 
   def show
   end
+
+  def edit
+  end
+
 
   private
 
