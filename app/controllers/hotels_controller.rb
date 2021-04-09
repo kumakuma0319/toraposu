@@ -1,5 +1,6 @@
 class HotelsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
+  before_action :hotel_for_params, only: [:show]
 
   def index
     @hotels = Hotel.all
@@ -18,6 +19,9 @@ class HotelsController < ApplicationController
     @hotel = Hotel.new
   end
 
+  def show
+  end
+
   private
 
   def hotel_params
@@ -27,4 +31,10 @@ class HotelsController < ApplicationController
   def move_to_index
     redirect_to action: :index if current_user.id != @hotel.user_id
   end
+
+  def hotel_for_params
+    @hotel = Hotel.find(params[:id])
+  end
+
+
 end
