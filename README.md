@@ -20,7 +20,7 @@
 | check_out          | string     | null: false                    |
 | price              | integer    | null: false                    |
 | bed_type           | text       | null: false                    |
-| facility           | text       | null: false                    |
+| facilities         | text       | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
 ### Association

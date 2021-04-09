@@ -26,6 +26,13 @@ class HotelsController < ApplicationController
   def edit
   end
 
+  def update
+    if @hotel.update(hotel_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
 
   private
 
