@@ -1,6 +1,7 @@
 class HotelsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
-  before_action :hotel_for_params, only: [:show]
+  before_action :hotel_for_params, only: [:show, :edit, :update]
+  before_action :move_to_index, only: [:edit, :update]
 
   def index
     @hotels = Hotel.all
@@ -20,6 +21,17 @@ class HotelsController < ApplicationController
   end
 
   def show
+  end
+
+  def edit
+  end
+
+  def update
+    if @hotel.update(hotel_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   private
