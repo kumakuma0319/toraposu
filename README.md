@@ -1,3 +1,5 @@
+# APP URL
+- https://toraposu.herokuapp.com/
 # テーブル設計
 
 ## users テーブル
@@ -16,15 +18,9 @@
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | name               | string     | null: false                    |
-| check_in           | string     | null: false                    |
-| check_out          | string     | null: false                    |
 | price              | integer    | null: false                    |
-| bed_type           | text       | null: false                    |
 | facilities         | text       | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
-
-## APP URL
-- https://toraposu.herokuapp.com/
