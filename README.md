@@ -25,3 +25,6 @@
 
 ### Association
 - belongs_to :user
+
+## APP URL
+- https://toraposu.herokuapp.com/
