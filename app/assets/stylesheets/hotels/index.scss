@@ -211,14 +211,17 @@ a {
 }
 
 .item-contents>.title {
+  padding: 0 4vw;
   font-size: 5vh;
-  line-height: 1.4;
+  color: white;
   font-weight: bold;
+  border: groove;
+  background-color: #000080;
 }
 
 .item-contents>.subtitle {
   font-size: 4vh;
-  margin: 1vh 0;
+  margin: 4vh 0 3vh;
   text-decoration: none;
   color: #000080;
   font-weight: bold;
