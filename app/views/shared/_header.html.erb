@@ -1,6 +1,7 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
   <div class='search-bar-contents'>
+ <%= link_to image_tag("toraposu-2.png", class:"toraposu-2"), "/" %>
     <form class="search-form" action="#">
       <input class='input-box' placeholder='キーワードから探す'>
       <button class="search-button">
@@ -8,9 +9,9 @@
       </button>
     </form>
   </div>
-  <div class='nav'>
+ <div class='nav'>
     <ul class='lists-right'>
-  <% if user_signed_in? %>
+    <% if user_signed_in? %>
       <%# ログインの有無で表示が変わるように条件分岐 %>
      <li><%= link_to current_user.nickname, root_path, class: "user-nickname" %> </li> 
      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %> </li> 
