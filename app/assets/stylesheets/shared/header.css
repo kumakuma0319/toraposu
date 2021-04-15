@@ -15,16 +15,16 @@
   align-items: center;
 }
 
-.furima-icon {
-  width: 10vw;
-  margin-right: 10vw;
+.toraposu-2 {
+  width: 37%;
+  height: 60%;
 }
 
 .search-form {
-  width: 65vw;
+  width: 100vw;
   height: 5vh;
   display: flex;
-  margin-bottom: 5px;
+  margin-top: 2vh;
 }
 
 .search-form>.input-box {
