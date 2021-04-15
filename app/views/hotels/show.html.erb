@@ -3,18 +3,10 @@
 <%# 商品の概要 %>
 <div class="item-show">
   <div class="item-box">
-    <h2 class="name">
-      <%= @hotel.name %>
-    </h2>
     <div class="item-img-content">
       <%= image_tag @hotel.image ,class:"item-box-img" %>
     </div>
-    <div class="item-price-box">
-      <span class="item-price">
-      <%= "予算" %>
-        <%= @hotel.price %>
-      </span>
-    </div>
+   
 
     <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
  <% if user_signed_in? %>
