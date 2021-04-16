@@ -31,12 +31,20 @@
     <table class="detail-table">
       <tbody>
         <tr>
-          <th class="detail-item">投稿者</th>
-          <td class="detail-value"><%= @hotel.user.nickname %></td>
+          <th class="detail-item">宿名</th>
+          <td class="detail-value"><%= @hotel.name %></td>
         </tr>
         <tr>
+          <th class="detail-item">予算</th>
+          <td class="detail-value"><%= @hotel.price %></td>
+        </tr>
+         <tr>
           <th class="detail-item">宿の設備</th>
           <td class="detail-value"><%= @hotel.facilities %></td>
+        </tr>
+         <tr>
+          <th class="detail-item">チェックイン時刻</th>
+          <td class="detail-value"><%= "#{@hotel.check_in}" %></td>
         </tr>
 
       </tbody>
