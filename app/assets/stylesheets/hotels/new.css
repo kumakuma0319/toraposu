@@ -17,8 +17,9 @@
 .items-sell-main {
   width: 70vw;
   min-width: 450px;
-  padding: 10vh 15vw;
+  padding: 5vh 15vw;
   padding-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .items-sell-title {
@@ -141,6 +142,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .price-text {
