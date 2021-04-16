@@ -15,8 +15,8 @@
 }
 
 .items-sell-main {
-  width: 70vw;
-  min-width: 450px;
+  width: 80vw;
+  min-width: 500px;
   padding: 10vh 15vw;
   padding-bottom: 20px;
 }
@@ -133,6 +133,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .price-content {
@@ -165,7 +166,7 @@
 
 /* チェックイン時刻 */
 
-.check-in {
+.cheak-in {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -173,12 +174,13 @@
   margin-bottom: 20px;
 }
 
-.checkin-content {
+.cheakin-content {
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 
 .checkin-text {
    /* min-width: 170px; */
@@ -186,6 +188,7 @@
    align-items: center;
    margin-right: 20px;
 }
+
 
 .checkin-input {
   width: 15vw;
@@ -199,6 +202,7 @@
 
 /* チェックアウト時刻 */
 
+
 .check-out {
   display: flex;
   justify-content: space-between;
@@ -206,6 +210,7 @@
   width: 100%;
   margin-bottom: 30px;
 }
+
 
 .checkout-content {
   padding: 10px;
@@ -221,7 +226,7 @@
    margin-right: 20px;
 }
 
-.checkout-input {
+.cheakout-input {
   width: 15vw;
   height: 30px;
   text-align: left;
