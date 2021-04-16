@@ -36,6 +36,12 @@
           <th class="detail-item">宿の設備</th>
           <td class="detail-value"><%= @hotel.facilities %></td>
         </tr>
+         <th class="detail-item">チェックイン時刻</th>
+          <td class="detail-value"><%= "#{@hotel.check_in_hour}:#{@hotel.check_in_minutes}" %></td>
+        </tr>
+         <th class="detail-item">チェックアウト時刻</th>
+          <td class="detail-value"><%= "#{@hotel.check_out_hour}:#{@hotel.check_out_minutes}" %></td>
+        </tr>
          <tr>
           <th class="detail-item">出品者</th>
           <td class="detail-value"><%= @hotel.user.nickname %></td>
