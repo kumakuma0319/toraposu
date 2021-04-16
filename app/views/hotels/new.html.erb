@@ -40,6 +40,7 @@
     <%# /商品名と商品説明 %>
 
     
+    
 
     
 
@@ -53,8 +54,6 @@
           <span class="sell-yen">¥</span>
           <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）15000" %>
         </div>
-<<<<<<< Updated upstream
-=======
     </div>
     <%# /販売価格 %>
 
@@ -65,7 +64,7 @@
           <span>チェックイン時刻</span>
           <span class="indispensable">必須</span>
         </div>
-          <%= f.text_field :price, class:"checkin-input", placeholder:" 15時30分であれば「1530」のように入力してください"%>
+          <%= f.text_field :check_in, class:"checkin-input", placeholder:" 15時30分であれば「1530」のように入力してください"%>
       </div>
     </div>
 
@@ -78,14 +77,12 @@
           <span>チェックアウト時刻</span>
           <span class="indispensable">必須</span>
         </div>
-          <%= f.text_field :price, class:"checkout-input", placeholder:" 10時30分であれば「1030」のように入力してください"%>
+          <%= f.text_field :check_out, class:"checkout-input", placeholder:" 10時30分であれば「1030」のように入力してください"%>
       </div>
     </div>
 
     <%# /チェックアウト時刻 %>
->>>>>>> Stashed changes
   
-    <%# /販売価格 %>
 
    
     <%# 下部ボタン %>
@@ -94,6 +91,5 @@
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
-  </div>
   </div>
   <% end %>
