@@ -15,8 +15,8 @@
 }
 
 .items-sell-main {
-  width: 70vw;
-  min-width: 450px;
+  width: 80vw;
+  min-width: 500px;
   padding: 10vh 15vw;
   padding-bottom: 20px;
 }
@@ -133,11 +133,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .price-content {
   width: 300px;
-  border-bottom: 1px solid #ccc;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -161,6 +161,75 @@
 }
 
 /* /販売価格 */
+
+
+/* チェックイン時刻 */
+
+.cheak-in {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cheakin-content {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cheakin-text {
+   /* min-width: 170px; */
+   display: flex;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.cheakin-input {
+  width: 15vw;
+  height: 30px;
+  text-align: left;
+}
+
+/* /チェックイン時刻 */
+
+
+
+/* チェックアウト時刻 */
+
+.cheak-out {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.cheakout-content {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cheakout-text {
+   /* min-width: 170px; */
+   display: flex;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.cheakout-input {
+  width: 15vw;
+  height: 30px;
+  text-align: left;
+}
+
+/* /チェックアウト時刻 */
+
+
 
 /* 注意書き */
 .caution {
