@@ -40,6 +40,7 @@
     <%# /商品名と商品説明 %>
 
     
+    
 
     
 
@@ -53,8 +54,35 @@
           <span class="sell-yen">¥</span>
           <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）15000" %>
         </div>
-  
+    </div>
     <%# /販売価格 %>
+
+     <%# チェックイン時刻 %>
+    <div class="check-in">
+     <div class="checkin-content">
+        <div class="checkin-text">
+          <span>チェックイン時刻</span>
+          <span class="indispensable">必須</span>
+        </div>
+          <%= f.text_field :price, class:"checkin-input", placeholder:" 15時30分であれば「1530」のように入力してください"%>
+      </div>
+    </div>
+
+    <%# /チェックイン時刻 %>
+
+    <%# チェックアウト時刻 %>
+    <div class="check-out">
+     <div class="checkout-content">
+        <div class="checkout-text">
+          <span>チェックアウト時刻</span>
+          <span class="indispensable">必須</span>
+        </div>
+          <%= f.text_field :price, class:"checkout-input", placeholder:" 10時30分であれば「1030」のように入力してください"%>
+      </div>
+    </div>
+
+    <%# /チェックアウト時刻 %>
+  
 
    
     <%# 下部ボタン %>
@@ -63,6 +91,5 @@
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
-  </div>
   </div>
   <% end %>
