@@ -162,6 +162,78 @@
 
 /* /販売価格 */
 
+<<<<<<< Updated upstream
+=======
+
+/* チェックイン時刻 */
+
+.check-in {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.checkin-content {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkin-text {
+   /* min-width: 170px; */
+   display: flex;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.checkin-input {
+  width: 15vw;
+  height: 30px;
+  text-align: left;
+}
+
+/* /チェックイン時刻 */
+
+
+
+/* チェックアウト時刻 */
+
+.check-out {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.checkout-content {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout-text {
+   /* min-width: 170px; */
+   display: flex;
+   align-items: center;
+   margin-right: 20px;
+}
+
+.checkout-input {
+  width: 15vw;
+  height: 30px;
+  text-align: left;
+}
+
+/* /チェックアウト時刻 */
+
+
+
+>>>>>>> Stashed changes
 /* 注意書き */
 .caution {
   padding: 5vh 0;
