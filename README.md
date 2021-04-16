@@ -20,8 +20,10 @@
 | name               | string     | null: false                    |
 | price              | integer    | null: false                    |
 | facilities         | text       | null: false                    |
-| check_in           | integer    | null: false                    |
-| check_out          | integer    | null: false                    |
+| check_in_hour      | integer    | null: false                    |
+| check_in_minutes   | integer    | null: false                    |
+| check_out_hour     | integer    | null: false                    |
+| check_out_minutes  | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
 ### Association

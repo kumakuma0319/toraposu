@@ -189,7 +189,7 @@
 }
 
 .checkin-input {
-  width: 15vw;
+  width: 2vw;
   height: 30px;
   text-align: left;
 }
@@ -223,7 +223,7 @@
 }
 
 .checkout-input {
-  width: 15vw;
+  width: 2vw;
   height: 30px;
   text-align: left;
 }

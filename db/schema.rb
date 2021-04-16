@@ -36,8 +36,10 @@ ActiveRecord::Schema.define(version: 2021_04_03_081508) do
   create_table "hotels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.integer "price", null: false
-    t.integer "check_in", null: false
-    t.integer "check_out", null: false
+    t.integer "check_in_hour", null: false
+    t.integer "check_in_minutes", null: false
+    t.integer "check_out_hour", null: false
+    t.integer "check_out_minutes", null: false
     t.text "facilities", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

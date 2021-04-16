@@ -7,7 +7,9 @@ class Hotel < ApplicationRecord
     validates :price
     validates :facilities
     validates :image
-    validates :check_in
-    validates :check_out
+    validates :check_in_hour
+    validates :check_in_minutes
+    validates :check_out_hour
+    validates :check_out_minutes
   end
 end

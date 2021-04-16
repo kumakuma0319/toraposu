@@ -64,7 +64,10 @@
           <span>チェックイン時刻</span>
           <span class="indispensable">必須</span>
         </div>
-          <%= f.text_field :check_in, class:"checkin-input", placeholder:" 15時30分であれば「1530」のように入力してください"%>
+          <%= f.text_field :check_in_hour, class:"checkin-input", placeholder:" 例) 15"%>
+          <span>時</span>
+          <%= f.text_field :check_in_minutes, class:"checkin-input", placeholder:" 例) 30"%>
+          <span>分</span>
       </div>
     </div>
 
@@ -77,7 +80,10 @@
           <span>チェックアウト時刻</span>
           <span class="indispensable">必須</span>
         </div>
-          <%= f.text_field :check_out, class:"checkout-input", placeholder:" 10時30分であれば「1030」のように入力してください"%>
+          <%= f.text_field :check_out_hour, class:"checkout-input", placeholder:"例) 10"%>
+          <span>時</span>
+          <%= f.text_field :check_out_minutes, class:"checkout-input", placeholder:" 例) 30"%>
+          <span>分</span>
       </div>
     </div>
 
