@@ -36,8 +36,10 @@ ActiveRecord::Schema.define(version: 2021_04_03_081508) do
   create_table "hotels", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.integer "price", null: false
+    t.integer "check_in", null: false
+    t.integer "check_out", null: false
     t.text "facilities", null: false
-    t.bigint "user_id"
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_hotels_on_user_id"

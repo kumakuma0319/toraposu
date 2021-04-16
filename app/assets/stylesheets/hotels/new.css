@@ -142,6 +142,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .price-text {
@@ -180,14 +181,16 @@
   justify-content: space-between;
 }
 
-.cheakin-text {
+
+.checkin-text {
    /* min-width: 170px; */
    display: flex;
    align-items: center;
    margin-right: 20px;
 }
 
-.cheakin-input {
+
+.checkin-input {
   width: 15vw;
   height: 30px;
   text-align: left;
@@ -199,7 +202,8 @@
 
 /* チェックアウト時刻 */
 
-.cheak-out {
+
+.check-out {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -207,14 +211,15 @@
   margin-bottom: 30px;
 }
 
-.cheakout-content {
+
+.checkout-content {
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.cheakout-text {
+.checkout-text {
    /* min-width: 170px; */
    display: flex;
    align-items: center;
@@ -228,7 +233,6 @@
 }
 
 /* /チェックアウト時刻 */
-
 
 
 /* 注意書き */

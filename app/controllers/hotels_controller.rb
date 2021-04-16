@@ -42,7 +42,7 @@ class HotelsController < ApplicationController
   private
 
   def hotel_params
-    params.require(:hotel).permit(:name, :price, :facilities, :image).merge(user_id: current_user.id)
+    params.require(:hotel).permit(:name, :price, :facilities, :image, :check_in, :check_out).merge(user_id: current_user.id)
   end
 
   def move_to_index
