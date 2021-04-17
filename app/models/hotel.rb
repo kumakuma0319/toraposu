@@ -11,5 +11,6 @@ class Hotel < ApplicationRecord
     validates :check_in_minutes
     validates :check_out_hour
     validates :check_out_minutes
+    validates :adress
   end
 end

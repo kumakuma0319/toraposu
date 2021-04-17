@@ -2,16 +2,12 @@
 app/assets/stylesheets/items/new.css %>
 
 <div class="items-sell-contents">
-  <header class="items-sell-header">
-    <%= link_to image_tag('toraposu-icon.png' , size: '200x150'), "/" %>
-  </header>
+  
   <div class="items-sell-main">
     <h2 class="items-sell-title">宿の情報を入力</h2>
     <%= form_with model: @hotel, local: true do |f| %>
 
-    <%# インスタンスを渡して、エラー発生時にメッセージが表示される%>
     <%= render 'shared/error_messages', model: f.object %>
-    <%# //インスタンスを渡して、エラー発生時にメッセージが表示される%>
 
     <%# 出品画像 %>
     <div class="img-upload">
@@ -34,6 +30,11 @@ app/assets/stylesheets/items/new.css %>
         <span class="indispensable">必須</span>
       </div>
       <%= f.text_area :name, class:"items-text", id:"item-name", placeholder:"宿の名前（必須 40文字まで)", maxlength:"40" %>
+         <div class="weight-bold-text">
+        宿の住所
+        <span class="indispensable">必須</span>
+      </div>
+        <%= f.text_area :adress, class:"items-text", placeholder:"宿の住所（必須 60字まで)", maxlength:"60" %>
       <div class="items-explain">
         <div class="weight-bold-text">
           宿の設備
@@ -45,12 +46,67 @@ app/assets/stylesheets/items/new.css %>
     <%# /商品名と商品説明 %>
 
     
+    
 
-  
+    
+
+    <%# 販売価格 %>
+    <div class="sell-price">
+        <div class="price-content">
+          <div class="price-text">
+            <span>予算</span>
+            <span class="indispensable">必須</span>
+          </div>
+          <span class="sell-yen">¥</span>
+          <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）15000" %>
+        </div>
+    </div>
+    <%# /販売価格 %>
+
+     <%# チェックイン時刻 %>
+    <div class="check-in">
+     <div class="checkin-content">
+        <div class="checkin-text">
+          <span>チェックイン時刻</span>
+          <span class="indispensable">必須</span>
+        </div>
+          <%= f.text_field :check_in_hour, class:"checkin-input", placeholder:" 例) 15"%>
+          <span>時</span>
+          <%= f.text_field :check_in_minutes, class:"checkin-input", placeholder:" 例) 30"%>
+          <span>分</span>
+      </div>
+    </div>
+
+    <%# /チェックイン時刻 %>
+
+    <%# チェックアウト時刻 %>
+    <div class="check-out">
+     <div class="checkout-content">
+        <div class="checkout-text">
+          <span>チェックアウト時刻</span>
+          <span class="indispensable">必須</span>
+        </div>
+          <%= f.text_field :check_out_hour, class:"checkout-input", placeholder:"例) 10"%>
+          <span>時</span>
+          <%= f.text_field :check_out_minutes, class:"checkout-input", placeholder:" 例) 30"%>
+          <span>分</span>
+      </div>
+    </div>
+
+    <%# /チェックアウト時刻 %>
+       <div class="items-explain">
+        <div class="weight-bold-text">
+          その他の情報
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :others_infomation, class:"others_info", placeholder:"宿の住所（1000文字まで）例）〇〇駅から徒歩15分" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+
+   
     <%# 下部ボタン %>
     <div class="sell-btn-contents">
       <%= f.submit "変更する" ,class:"sell-btn" %>
-      <%=link_to 'もどる', hotel_path(@hotel.id), class:"back-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
   </div>

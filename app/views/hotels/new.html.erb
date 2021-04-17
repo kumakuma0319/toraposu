@@ -29,6 +29,11 @@
         <span class="indispensable">必須</span>
       </div>
       <%= f.text_area :name, class:"items-text", id:"item-name", placeholder:"宿の名前（必須 40文字まで)", maxlength:"40" %>
+         <div class="weight-bold-text">
+        宿の住所
+        <span class="indispensable">必須</span>
+      </div>
+        <%= f.text_area :adress, class:"items-text", placeholder:"宿の住所（必須 60字まで)", maxlength:"60" %>
       <div class="items-explain">
         <div class="weight-bold-text">
           宿の設備
@@ -48,10 +53,9 @@
     <div class="sell-price">
         <div class="price-content">
           <div class="price-text">
-            <span>予算</span>
+            <span>一人1泊あたりの予算</span>
             <span class="indispensable">必須</span>
           </div>
-          <span class="sell-yen">¥</span>
           <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）15000" %>
         </div>
     </div>
@@ -88,7 +92,12 @@
     </div>
 
     <%# /チェックアウト時刻 %>
-  
+       <div class="items-explain">
+        <div class="weight-bold-text">
+          その他の情報
+        </div>
+        <%= f.text_area :facilities, class:"others_info", placeholder:"その他の情報（1000文字まで）例）〇〇駅から徒歩15分" ,rows:"7" ,maxlength:"1000" %>
+      </div>
 
    
     <%# 下部ボタン %>

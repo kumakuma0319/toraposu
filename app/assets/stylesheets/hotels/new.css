@@ -103,11 +103,9 @@
   border: 1px solid #ccc;
   font-size: 16px;
   resize: none;
+  margin-bottom: 10px;
 }
 
-.items-explain {
-  margin-top: 2vh;
-}
 
 /* /商品名と商品説明 */
 
@@ -137,7 +135,7 @@
 }
 
 .price-content {
-  width: 300px;
+  width: 380px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -151,9 +149,6 @@
   align-items: center;
 }
 
-.sell-yen {
-  font-size: 18px;
-}
 
 .price-input {
   height: 30px;
@@ -189,7 +184,7 @@
 }
 
 .checkin-input {
-  width: 2vw;
+  width: 50px;
   height: 30px;
   text-align: left;
 }
@@ -223,7 +218,7 @@
 }
 
 .checkout-input {
-  width: 2vw;
+  width: 50px;
   height: 30px;
   text-align: left;
 }
@@ -265,6 +260,16 @@
   color: #fff;
   padding: 15px 35%;
   text-decoration: none;
+}
+
+.others_info{
+  width: 100%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 50px;
 }
 
 /* /下部ボタン */

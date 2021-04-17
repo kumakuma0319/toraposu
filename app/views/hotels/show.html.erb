@@ -29,6 +29,10 @@
           <td class="detail-value"><%= @hotel.name %></td>
         </tr>
          <tr>
+          <th class="detail-item">住所</th>
+          <td class="detail-value"><%= @hotel.adress %></td>
+        </tr>
+         <tr>
           <th class="detail-item">予算</th>
           <td class="detail-value"><%= "1泊一人当たり#{@hotel.price}円" %></td>
         </tr>
@@ -42,6 +46,12 @@
          <th class="detail-item">チェックアウト時刻</th>
           <td class="detail-value"><%= "#{@hotel.check_out_hour}:#{@hotel.check_out_minutes}" %></td>
         </tr>
+          <% if @hotel.others_infomation.present? %>
+          <tr>
+          <th class="detail-item">その他の情報</th>
+          <td class="detail-value"><%= @hotel.others_infomation %></td>
+        </tr>
+        <% end %>
          <tr>
           <th class="detail-item">出品者</th>
           <td class="detail-value"><%= @hotel.user.nickname %></td>
