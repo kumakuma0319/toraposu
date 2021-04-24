@@ -9,6 +9,7 @@ class HotelsController < ApplicationController
 
   def create
     @hotel = Hotel.new(hotel_params)
+    binding.pry
     if @hotel.save
       redirect_to root_path
     else
@@ -42,7 +43,7 @@ class HotelsController < ApplicationController
   private
 
   def hotel_params
-    params.require(:hotel).permit(:name, :price, :facilities, :image, :check_in_hour, :check_in_minutes, :check_out_hour, :check_out_minutes, :adress, :others_infomation).merge(user_id: current_user.id)
+    params.require(:hotel).permit(:name, :price, :facilities, :check_in_hour, :check_in_minutes, :check_out_hour, :check_out_minutes, :adress, :others_infomation, images:[]).merge(user_id: current_user.id)
   end
 
   def move_to_index
