@@ -4,17 +4,20 @@
 <div class="item-show">
   <div class="item-box">
     <div class="item-img-content">
-        <% @hotel.images.each do |image| %>
-          <%= image_tag image class:"item-box-img" %>
-        <% end %>
+      <%= image_tag @hotel.image ,class:"item-box-img" %>
     </div>
    
+
+    <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
  <% if user_signed_in? %>
   <% if current_user.id == @hotel.user_id  %>
     <%= link_to "編集", edit_hotel_path(@hotel.id), method: :get, class: "item-red-btn" %>
      <%= link_to "削除", hotel_path(@hotel.id), method: :delete, class:"item-destroy" %>
   <% end %>
 <% end %>
+
+
+    <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
 
     <div class="item-explain-box">
       <span><%= "投稿者と宿の詳細情報" %></span>
