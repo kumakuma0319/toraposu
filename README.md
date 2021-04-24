@@ -1,5 +1,10 @@
 # APP URL
 - https://toraposu.herokuapp.com/
+
+# ログイン
+- Mail:aaa@aaa.jp
+- Password:aaaaaa1
+
 # テーブル設計
 
 ## users テーブル
