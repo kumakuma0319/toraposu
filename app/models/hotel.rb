@@ -1,12 +1,12 @@
 class Hotel < ApplicationRecord
   belongs_to :user
-  has_one_attached :image
+  has_many_attached :images
 
   with_options presence: true do
     validates :name
     validates :price
     validates :facilities
-    validates :image
+    validates :images
     validates :check_in_hour
     validates :check_in_minutes
     validates :check_out_hour
