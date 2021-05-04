@@ -1,9 +1,15 @@
 # APP URL
 - https://toraposu.herokuapp.com/
 
-# ログイン
-- Mail:aaa@aaa.jp
-- Password:aaaaaa1
+# ログインに使用する情報
+
+## 投稿時に使える情報
+- メールアドレス:aaa@aaa.jp
+- パスワード:aaaaaa1
+
+## 「編集」と「削除」ボタンの確認などに使える情報
+- メールアドレス:bbb@bbb.jp
+- パスワード:bbbbbb1
 
 # 投稿時に使用できる画像
 ![投稿用画像](app/assets/images/post_image.jpg "投稿用")
