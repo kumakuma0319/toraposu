@@ -6,7 +6,7 @@
 - Password:aaaaaa1
 
 # 投稿時に使用できる画像
-![投稿用画像](images/投稿用画像.png "投稿用")
+![投稿用画像](images/post_image.jpg "投稿用")
 
 # テーブル設計
 
