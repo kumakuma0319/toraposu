@@ -1,17 +1,17 @@
 # APP URL
 - https://toraposu.herokuapp.com/
 
-# ログインに使用する情報
+# ログインや投稿に使用できる情報
 
-## 投稿などに使える情報
-- メールアドレス:aaa@aaa.jp
-- パスワード:aaaaaa1
-
-## その他
+## ログインに使用する情報
 - メールアドレス:bbb@bbb.jp
 - パスワード:bbbbbb1
 
-# 投稿時に使用できる画像
+## 投稿に使用できる情報
+- メールアドレス:aaa@aaa.jp
+- パスワード:aaaaaa1
+
+## 投稿時に使用できる画像
 ![投稿用画像](app/assets/images/post_image.jpg "投稿用")
 
 # テーブル設計
